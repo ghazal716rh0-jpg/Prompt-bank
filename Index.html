@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f2f0">
+<title>Prompt Bank | Logomaker 7160</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{--bg:#fbf7f5;--ink:#292322;--muted:#807573;--rose:#d98c9d;--rose2:#f0d4d9;--line:#eadfdb;--card:#fff;--accent:#7c4b54}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+header{padding:22px 0;border-bottom:1px solid var(--line);background:#ffffffa6;backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800}.logo{height:42px;width:42px;border-radius:14px;background:linear-gradient(145deg,#d88f9f,#a76372);display:grid;place-items:center;color:white;font-size:15px;box-shadow:0 7px 18px #d88f9f50}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}
+.hero{padding:64px 0 42px;text-align:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--rose2);background:#fff6f7;padding:7px 13px;border-radius:99px;color:var(--accent);font-size:13px}
+h1{font-size:clamp(30px,5vw,54px);line-height:1.35;margin:20px auto 12px;letter-spacing:-1px}.highlight{color:var(--accent)}.hero p{max-width:650px;margin:0 auto;color:var(--muted);line-height:2;font-size:16px}
+.actions{display:flex;justify-content:center;gap:12px;margin:25px 0 0;flex-wrap:wrap}.btn{border:0;border-radius:14px;padding:12px 20px;font-family:inherit;font-weight:600;cursor:pointer;transition:.2s}.primary{background:var(--accent);color:white}.secondary{border:1px solid var(--line);background:white;color:var(--ink)}.btn:hover{transform:translateY(-2px)}
+.stats{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:35px;color:var(--muted);font-size:13px}.stats b{color:var(--ink);font-size:17px;margin-left:5px}
+.section{padding:22px 0 58px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.section-head h2{font-size:24px;margin:0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.search{display:flex;gap:9px;max-width:440px;margin:0 auto 18px}.search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px 16px;font:inherit;outline:none}.search input:focus{border-color:var(--rose)}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 25px}.filter{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:8px 14px;font:inherit;font-size:13px;cursor:pointer}.filter.active{background:var(--accent);border-color:var(--accent);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 20px #3d29220a}.cover{height:205px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;overflow:hidden;background:linear-gradient(135deg,#f4dfe3,#f9f2ed)}.cover:before,.cover:after{content:"";position:absolute;border:1px solid #ffffff90;border-radius:50%;width:240px;height:240px}.cover:after{width:165px;height:165px}.cover span{z-index:1;font-size:27px;font-weight:700;color:#724b54;line-height:1.5}.cover small{display:block;font-size:12px;font-weight:400;margin-top:8px;letter-spacing:1px}
+.c2{background:linear-gradient(135deg,#e6e0d7,#f5efe5)}.c2 span{color:#64584b}.c3{background:linear-gradient(135deg,#e4e8e9,#f3f5f3)}.c3 span{color:#53656a}.c4{background:linear-gradient(135deg,#eadcf0,#f7eff8)}.c4 span{color:#745d7d}.c5{background:linear-gradient(135deg,#f2e0d2,#faeee5)}.c5 span{color:#865e49}.c6{background:linear-gradient(135deg,#dce9e2,#eef6f1)}.c6 span{color:#4c6d5d}
+.card-body{padding:17px}.meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.tag{background:#fbf0f2;color:var(--accent);padding:5px 9px;border-radius:99px}.card h3{font-size:17px;margin:11px 0 6px}.card p{font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 14px}.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}.copy{font-size:13px;padding:9px 12px}.free{font-size:12px;color:#4b8068}.empty{text-align:center;color:var(--muted);padding:30px;display:none}
+.about{background:#f4e8e7;border-radius:26px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px}.about h2{margin:0 0 10px}.about p{color:var(--muted);line-height:2;margin:0;max-width:650px}.about .btn{white-space:nowrap}
+footer{padding:28px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);text-align:center}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.about{display:block}.about .btn{margin-top:18px}}
+@media(max-width:580px){.wrap{padding:0 15px}.hero{padding:42px 0 30px}.navlinks{display:none}.grid{grid-template-columns:1fr}.cover{height:190px}.section-head{display:block}.stats{gap:14px}.about{padding:22px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">7160</span><span>بانک پرامپت <small style="display:block;font-size:11px;color:#9b8b88;font-weight:500">LOGOMAKER 7160</small></span></a>
+  <nav class="navlinks"><a href="#portfolio">گالری پرامپت‌ها</a><a href="#about">درباره بانک</a><a href="#join">عضویت</a></nav>
+</div></header>
+<main>
+<section class="hero wrap">
+  <span class="eyebrow">✦ Prompt Library · نسخه آزمایشی</span>
+  <h1>ایده‌هات رو به تصویر تبدیل کن،<br><span class="highlight">با پرامپت‌های آماده</span></h1>
+  <p>پرامپت‌های کاربردی و منتخب برای ساخت تصاویر خاص، طبیعی و چشم‌نواز؛ فقط انتخاب کن، کپی کن و با عکس خودت امتحانش کن.</p>
+  <div class="actions"><a class="btn primary" href="#portfolio">دیدن گالری پرامپت‌ها</a><a class="btn secondary" href="#join">دریافت پرامپت‌های بیشتر</a></div>
+  <div class="stats"><span><b>✦</b> پرامپت‌های منتخب</span><span><b>↗</b> دسته‌بندی‌شده</span><span><b>⌁</b> کپی سریع</span></div>
+</section>
+<section class="section wrap" id="portfolio">
+  <div class="section-head"><div><h2>گالری پرامپت‌ها</h2><p>برای دیدن پرامپت، کارت موردنظرت رو انتخاب کن.</p></div></div>
+  <div class="search"><input id="search" type="search" placeholder="جستجو بین پرامپت‌ها…"></div>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div><div class="empty" id="empty">پرامپتی با این عبارت پیدا نشد.</div>
+</section>
+<section class="section wrap" id="about"><div class="about"><div><h2>یک تصویر متفاوت، از یک پرامپت دقیق شروع می‌شه ✨</h2><p>اینجا مجموعه‌ای از ایده‌ها و دستورهای تصویری جمع می‌کنیم تا ساخت عکس‌های خلاقانه ساده‌تر بشه. هر کارت نمونه، قابل کپی و قابل شخصی‌سازی است.</p></div><a class="btn secondary" href="#portfolio">شروع گشتن</a></div></section>
+<section class="section wrap" id="join"><div class="about"><div><h2>پرامپت‌های جدید رو از دست نده</h2><p>لینک کانال یا صفحه فروش خودت رو اینجا قرار بده تا مخاطب برای دریافت نسخه‌های کامل و جدید وارد بشه.</p></div><a class="btn primary" href="https://t.me/" target="_blank" rel="noopener">لینک کانال (قابل تغییر)</a></div></section>
+</main>
+<footer><div class="wrap">ساخته‌شده برای برند <b>Logomaker 7160</b> · این نسخه نمونه است و قابل ویرایشه.</div></footer>
+<script>
+const prompts=[
+{id:1,category:"دخترانه",title:"پرتره لطیف و طبیعی",desc:"نور پنجره، پوست واقعی و حس عکاسی روزمره.",cover:"پرتره طبیعی",style:"",prompt:"Create a photorealistic portrait of the person in the reference photo. Preserve identity and exact facial features. Soft window light, natural skin texture, candid expression, subtle makeup, elegant neutral outfit, 85mm portrait lens, shallow depth of field, editorial photography. Avoid plastic skin, face reshaping, or exaggerated retouching."},
+{id:2,category:"فشن",title:"استایل مجله‌ای مینیمال",desc:"یک قاب فشن با استایل ساده و نور حرفه‌ای.",cover:"فشن مینیمال",style:"c2",prompt:"Create a high-end fashion editorial photograph of the same person from the reference image, maintaining their facial identity. Minimal beige studio, structured outfit, natural confident pose, soft directional studio lighting, subtle shadows, realistic fabric detail, luxury magazine composition, 4:5 vertical."},
+{id:3,category:"زوج",title:"عکس دونفره سینمایی",desc:"حال‌وهوای سینمایی و صمیمی، بدون اغراق.",cover:"لحظه دونفره",style:"c3",prompt:"Create a realistic cinematic couple portrait using the provided reference photos. Keep both people recognizable with accurate facial features. Warm evening light, intimate but natural body language, understated styling, film-like color grading, realistic proportions and hands, candid photography, vertical composition."},
+{id:4,category:"تولد",title:"عکس تولد شیک",desc:"نور شمع، جزئیات ظریف و حس جشن خصوصی.",cover:"Birthday mood",style:"c4",prompt:"Create a photorealistic birthday portrait of the person in the reference photo, preserving their identity. Elegant small birthday cake, soft candle glow, tasteful flowers, cream and blush palette, refined party styling, natural smile, realistic skin texture, cinematic bokeh, portrait orientation."},
+{id:5,category:"تبلیغاتی",title:"عکاسی محصول لوکس",desc:"قاب تمیز و مناسب معرفی محصول یا برند.",cover:"Product studio",style:"c5",prompt:"Create a premium product advertising photograph of the supplied product. Keep the product shape, label, colors and branding accurate. Place it on a clean sculptural surface with soft directional lighting, subtle shadows, refined warm neutral background, realistic materials, commercial studio photography, leave negative space for text."},
+{id:6,category:"ویدئو",title:"حرکت طبیعی و کوتاه",desc:"برای تبدیل تصویر به ویدئو با حرکت نرم.",cover:"Motion prompt",style:"c6",prompt:"Animate the reference image into a short realistic video. Preserve the subject's identity, clothing and environment. Natural subtle movement only: gentle breathing, a small head turn, soft blink, and slight camera push-in. Smooth motion, consistent lighting, no warping, no sudden gestures, no extra objects."}
+];
+const categories=["همه","دخترانه","فشن","زوج","تولد","تبلیغاتی","ویدئو"];
+let active="همه";
+const grid=document.getElementById("grid"), filters=document.getElementById("filters"), search=document.getElementById("search");
+categories.forEach(c=>{const b=document.createElement("button");b.className="filter"+(c===active?" active":"");b.textContent=c;b.onclick=()=>{active=c;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x.textContent===active));render()};filters.appendChild(b)});
+function render(){const q=search.value.trim().toLowerCase();const list=prompts.filter(p=>(active==="همه"||p.category===active)&&(`${p.title} ${p.desc} ${p.category}`.toLowerCase().includes(q)));grid.innerHTML="";document.getElementById("empty").style.display=list.length?"none":"block";
+list.forEach(p=>{const el=document.createElement("article");el.className="card";el.innerHTML=`<div class="cover ${p.style}"><span>${p.cover}<small>LOGOMAKER 7160 · PROMPT</small></span></div><div class="card-body"><div class="meta"><span class="tag">${p.category}</span><span>نمونه</span></div><h3>${p.title}</h3><p>${p.desc}</p><div class="card-foot"><button class="btn secondary copy">کپی پرامپت ⧉</button><span class="free">قابل شخصی‌سازی</span></div></div>`;el.querySelector(".copy").onclick=async e=>{try{await navigator.clipboard.writeText(p.prompt);e.target.textContent="کپی شد ✓";setTimeout(()=>e.target.textContent="کپی پرامپت ⧉",1600)}catch{alert("کپی خودکار در این مرورگر فعال نیست؛ متن پرامپت را از کد سایت کپی کنید.")}};grid.appendChild(el)})}
+search.addEventListener("input",render);render();
+</script>
+</body></html>
